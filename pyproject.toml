@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legionella-msx"
+version = "1.0.0"
+description = "Multi-Species Reactive Transport Model of Opportunistic Pathogen Dynamics in Water Networks"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Nikassh Bala", email = "nikassh@example.com"}
+]
+dependencies = [
+    "wntr>=0.5.0",
+    "salib>=1.4.0",
+    "numpy>=1.22.0",
+    "pandas>=1.5.0",
+    "matplotlib>=3.5.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "flake8>=6.0.0"
+]
